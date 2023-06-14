@@ -1,0 +1,100 @@
+@import "./breakpoints.scss";
+@mixin flex($jc, $ai) {
+     display: flex;
+     justify-content: $jc;
+     align-items: $ai;
+     display: -webkit-box;
+     display: -moz-box;
+     display: -ms-flexbox;
+     display: -moz-flex;
+     display: -webkit-flex;
+     -webkit-justify-content: $jc;
+     @content;
+}
+
+@mixin flex_col($gap) {
+     display: flex;
+     flex-direction: column;
+     -webkit-column-gap: $gap;
+     gap: $gap;
+     display: -webkit-box;
+     display: -moz-box;
+     display: -ms-flexbox;
+     display: -moz-flex;
+     display: -webkit-flex;
+}
+@mixin btn($border, $col) {
+     button {
+          background-color: transparent;
+          padding: 0.8rem 2.1rem;
+          border-radius: 5rem;
+          outline: none;
+          font-weight: 900;
+          color: $col !important;
+          border: 0.2rem solid $border;
+          font-size: 1.5em;
+          font-family: Athletic;
+          @content;
+          @include media("<=phone-tab") {
+               font-size: 1.2em;
+               padding: 0.9rem 2.2rem;
+          }
+     }
+}
+@mixin split($col1, $col2) {
+     @include flex(space-between, center);
+     @include media("<=tablet") {
+          @include flex_col(0rem);
+     }
+     .cmp {
+          height: 47rem;
+          width: 50%;
+          @include flex(center, center);
+          @include media("<=tablet") {
+               width: 100%;
+          }
+          &:nth-child(1) {
+               background: $col1;
+               border-right: 1px solid black;
+               @include media("<=phone-tab") {
+                    height: 39rem;
+               }
+               .sect_1 {
+                    width: 85%;
+                    @include flex_col(2.6rem);
+                    @include media("<=tablet") {
+                         width: 90%;
+                         @include flex_col(2.6rem);
+                    }
+               }
+               @include media("<=tablet") {
+                    border: {
+                         right: none;
+                         bottom: 1px solid black;
+                    }
+               }
+          }
+          &:nth-child(2) {
+               background: $col2;
+               border-left: 1px solid black;
+               @include media("<=phone-tab") {
+                    height: 35rem;
+               }
+               @include media("<=phone-tab") {
+                    border: {
+                         top: 1px solid black;
+                         left: none;
+                    }
+               }
+               .sect_2 {
+                    width: 100%;
+                    @include flex(center, center);
+               }
+          }
+          & > div {
+               width: 90%;
+               margin: 0 auto;
+          }
+          @content;
+     }
+}

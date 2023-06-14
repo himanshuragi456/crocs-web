@@ -1,0 +1,52 @@
+.contain_wrap {
+     width: 93%;
+     margin: 0 auto;
+     @include media("<=phone-tab") {
+          width: 90%;
+     }
+}
+span.word_wrap {
+     overflow: hidden;
+     display: inline-block;
+}
+[data-animation="header"] span.word {
+     overflow-y: hidden;
+}
+.marquee {
+     cursor: default;
+}
+[data-sticker] {
+     position: absolute;
+}
+@keyframes marquee {
+     0% {
+          transform: translate(0);
+     }
+     100% {
+          transform: translateX(-100%);
+     }
+}
+.collab_wrap_slider_star {
+     width: 26.5%;
+     flex-shrink: 0 !important;
+
+     @include media("<=tablet") {
+          width: 40%;
+     }
+     @include media("<=phone-tab") {
+          width: 70%;
+     }
+     .img {
+          width: 100%;
+          img {
+               width: 100%;
+          }
+     }
+}
+img {
+     -webkit-user-drag: none;
+}
+::selection {
+     background-color: black;
+     color: white;
+}

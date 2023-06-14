@@ -1,0 +1,38 @@
+@import "./mixins";
+$pale-orange: #ffbc01;
+$croc-green: #38bc42;
+$pale-green: #caf3b2;
+$black-txt: #141414;
+$black-bg: #0f0e10;
+$pinke: #ff8576;
+$milk: #fff7e0;
+$red: #fb5531;
+$croc-blue: #226edc;
+$purple: #a473ff;
+$lavender: #e8dbff;
+$pink: #ff90e8;
+$lightpink: #ffdafa;
+$darke: #141414;
+$sza: #c7ecf3;
+$szagrey: #0c3139;
+
+%flex_r {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+%borderb {
+     border-bottom: 2px solid black;
+}
+%polaroid {
+     padding: 1rem;
+     background: white;
+}
+%cmptext {
+     p {
+          width: 95%;
+          @include media("<=phone-tab") {
+               width: 100%;
+          }
+     }
+}

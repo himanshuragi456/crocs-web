@@ -1,0 +1,72 @@
+{
+     "crocs": [
+          {
+               "id": 1,
+               "name": "Bamba Sandals",
+               "price": 28,
+               "color": "#9DA2FF"
+          },
+          {
+               "id": 2,
+               "name": "Crush Crocs",
+               "price": 50,
+               "color": "#BDE72F"
+          },
+          {
+               "id": 3,
+               "name": "Candy Crocs",
+               "price": 100,
+               "color": "#3D87F3"
+          },
+          {
+               "id": 4,
+               "name": "Sweet Crocs",
+               "price": 20,
+               "color": "#F9C6EF"
+          }
+     ],
+     "tags": [
+          {
+               "id": 1,
+               "@": "@jesseakoh",
+               "name": "Gang",
+               "format": "svg"
+          },
+          {
+               "id": 2,
+               "@": "@thecreator",
+               "name": "SZA",
+               "format": "svg"
+          },
+          {
+               "id": 3,
+               "@": "@sashdesign",
+               "name": "Jiggy",
+               "format": "png"
+          },
+          {
+               "id": 4,
+               "@": "@olowoshiibi",
+               "name": "Ambient",
+               "format": "svg"
+          }
+     ],
+     "collab": [
+          {
+               "id": 1,
+               "img": "https://res.cloudinary.com/dszdgdeoh/image/upload/v1663677823/Star17_mmmjc5.svg"
+          },
+          {
+               "id": 2,
+               "img": "https://res.cloudinary.com/dszdgdeoh/image/upload/v1663677822/Star13_lodkbu.svg"
+          },
+          {
+               "id": 3,
+               "img": "https://res.cloudinary.com/dszdgdeoh/image/upload/v1663677822/Star16_rwo3e5.svg"
+          },
+          {
+               "id": 4,
+               "img": "https://res.cloudinary.com/dszdgdeoh/image/upload/v1663677822/Star18_f3cvp6.svg"
+          }
+     ]
+}
